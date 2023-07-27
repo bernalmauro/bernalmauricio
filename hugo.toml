@@ -1,0 +1,50 @@
+BaseURL = "https://www.mywebsite.com/"
+  languageCode = "en-us"
+  name = "Bernal Mauricio"
+
+  relativeURLS = true
+
+enableRobotsTXT = true
+
+[params]
+  author = "Misael Mauricio Bernal Ramos"
+  description = "This is an awesome Hugo Bootstrap site"
+  logo = "https://www.mywebsite.com/images/logo.png"
+  images = ["/images/site-feature-image.jpg"]
+  enable_nested_menu = true
+
+
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+
+[menu]
+  [[menu.main]]
+    identifier = "graficos"
+    name = "Gráficos"
+    url = "/graficos/"
+    weight = 200
+      [[menu.main]]
+        parent = "graficos"
+        name = "Argentina"
+        url = "/graficos/argentina/"
+          [[menu.main]]
+            parent = "graficos"
+            name = "BCRA"
+            url = "/graficos/argentina/bcra/"
+      [[menu.main]]
+        parent = "graficos"
+        name = "Bolivia"
+        url = "/graficos/bolivia/"
+[[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 100
+[[menu.main]]
+    identifier = "biblioteca"
+    name = "Biblioteca"
+    url = "/biblioteca/"
+    weight = 300
+    
