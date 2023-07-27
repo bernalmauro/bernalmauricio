@@ -1,8 +1,8 @@
-BaseURL = "https://www.mywebsite.com/"
-  languageCode = "en-us"
-  name = "Bernal Mauricio"
+baseURL = "/"
+languageCode = "en-us"
+name = "Bernal Mauricio"
 
-  relativeURLS = true
+relativeURLS = true
 
 enableRobotsTXT = true
 
